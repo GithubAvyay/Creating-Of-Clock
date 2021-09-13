@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-<canvas id="canvas" width="400" height="400"
-style="background-color:black">
-</canvas>
-<script>
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-var radius = canvas.height / 2;
-ctx.translate(radius, radius);
-radius = radius * 0.90
-drawClock();
 function drawClock() {
   drawFace(ctx, radius);
 }
@@ -32,6 +19,3 @@ function drawFace(ctx, radius) {
   ctx.fillStyle = 'black';
   ctx.fill();
 }
-</script>
-</body>
-</html>
